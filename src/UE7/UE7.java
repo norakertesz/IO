@@ -16,5 +16,5 @@ public class UE7 {
         text= myFile.readLine();
     }
         myFile.close();//alles muss immer zu machen
-        fileReader.close(); //das muessen wir nicht schlossen
+
 }}
