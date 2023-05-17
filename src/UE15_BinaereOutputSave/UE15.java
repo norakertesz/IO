@@ -12,10 +12,10 @@ public class UE15 {
         FileOutputStream fos = new FileOutputStream(file);
 
 
-        char c;
-        while ((c = (char) System.in.read()) != 'x') {
+        char c=(char) System.in.read();
+        while (c != 'x') {
             fos.write(c);
-            System.out.println(c);
+            System.out.print(c);
         }
         fos.flush();
         fos.close();
