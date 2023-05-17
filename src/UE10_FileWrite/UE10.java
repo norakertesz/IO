@@ -1,4 +1,4 @@
-package UE10;
+package UE10_FileWrite;
 
 import java.io.*;
 

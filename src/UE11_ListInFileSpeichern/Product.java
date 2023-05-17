@@ -1,4 +1,4 @@
-package UE11;
+package UE11_ListInFileSpeichern;
 
 public class Product {
     private String productName;

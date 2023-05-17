@@ -1,4 +1,4 @@
-package UE7;
+package UE7_FileRead;
 
 import java.io.BufferedReader;
 import java.io.File;
