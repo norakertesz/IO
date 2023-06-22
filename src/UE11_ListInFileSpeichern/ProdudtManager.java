@@ -24,11 +24,21 @@ public class ProdudtManager {
         buffer.close();
     }
 
-    public void readFromFile(String path) throws IOException {
-        FileReader fileReader = new FileReader(path);
+    public void readFromFile(String path) {
+        FileReader fileReader = null;
+        try {
+            fileReader = new FileReader(path);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
         BufferedReader bufferedReader = new BufferedReader(fileReader);
         String zeile;
-        while ((zeile = bufferedReader.readLine()) != null) {
+        while (true) {
+            try {
+                if (!((zeile = bufferedReader.readLine()) != null)) break;
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
             System.out.println(zeile);
         }
     }

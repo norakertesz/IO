@@ -1,0 +1,3 @@
+firstname='Peter; lastname='Fox; mobilNumber='066455656; email='email@1;
+firstname='Arnold; lastname='Hugo; mobilNumber='066453333; email='email@2;
+firstname='Ernst; lastname='Merz; mobilNumber='066453223; email='email@3;
